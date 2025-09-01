@@ -43,3 +43,8 @@ int main(){
 
 4. O(N) since it'd have to loop through all elements in the array; a variable can be set to increase count whenever "apples" is seen during the looping through of all elements. 
 5. By printing the name of the array or by setting a pointer to first element of the array using &numbers[0].
+
+
+
+**Video:**
+https://youtu.be/etg9OzgmWHw
