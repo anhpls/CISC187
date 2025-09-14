@@ -1,4 +1,4 @@
-# Sorting Algorithms 
+# Sorting Algorithms I
 
 Anh Huynh
 
@@ -31,7 +31,7 @@ end
 
 The first .each goes through all the numbers once (N times).
 The second .each goes through the numbers again (N times).
-They're sequential and not nested so that means it's O(2N) but then we 	ignore the constant so the function is $O(N)$
+They're sequential and not nested so that means it's O(2N) but then we ignore the constant so the function is $O(N)$
 
 4. Use Big O Notation to describe the time complexity of the following function, which accepts an array of strings and prints each string in multiple cases: - **2 pts**
 
@@ -64,6 +64,7 @@ end
 The outer loop runs N times (once per element) and inside the loop, there is an if loop. This means that if index.even is true, which is half of the elements since half the elements have even indices, it runs another .each loop on the even indices ($O(N)$). 
 $ (N / 2) * N = N^2 / 2 $ then we drop the constant so $ O(N^2) $
 
-
+**Video:**
+https://youtu.be/tA8yM3FfXjs
 
 Typora doesn't have export as .txt so I have to keep as .md format.
