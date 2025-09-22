@@ -4,7 +4,7 @@ Anh Huynh
 
 1. Proof that, under the average-case scenario, the insertion sort has a time complexity of $O(N^2)$. Draw a clear figure and show all the operations clearly. 2 pts 
 
-   - **Drawn figure is on pg. 3 of this document**
+   - **Drawn figure is on Diagrams.pdf in repository**
 
    - **Explanation:** In an average-case scenario, sometimes an element will have to swap multiple times and move through already sorted portions of the array, thus making the time complexity $O(N^2)$. On pass $ i $, the inspected element may need to shift past about half of the $i $ elements that are already sorted. 
 
@@ -12,7 +12,7 @@ Anh Huynh
 
 2. At the start of the insertion sort, the index of the inspected value is set to 1. Change the index of the inspected value and verify that the total number of operations equals 20. Consider the worst-case scenario. Use N=5, where N is the number of elements. 4 pts
 
-   - **Answer is on pg 4 of this document**
+   - **Answer is on Diagrams.pdf in repository**
 
 3. The following function returns whether or not a capital “X” is present within a string. 4 pt
 
@@ -49,7 +49,6 @@ function containsX(string) {
 **Best case:** O(1) if the first character is 'X'
 **Average case (X is a random position in string):** ~N/2 checks which is O(N) but fewer operations than scanning all of string (all of N).
 **Worst case:** O(N)
-
 
 
 **Video Link:** https://youtu.be/_vlP8055n2M
