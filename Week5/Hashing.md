@@ -93,4 +93,6 @@ Table: T   10  T   20  T   --
 
 One way to fix this is to rehash the table periodically by reinserting all live records into a new hash table. This removes the tombstones and restores fast performance.
 
-​	
+
+
+**Video:** https://youtu.be/s84pSeCLXvs
