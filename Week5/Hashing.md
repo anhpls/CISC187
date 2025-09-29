@@ -50,7 +50,7 @@ int main(){
 
 2. Use C++, generate hash value of your name. **1 pts**
 
-   ```
+   ```C++
    #include <iostream>
    #include <functional> 
    using namespace std;
@@ -86,8 +86,11 @@ Table: 5   10  T   20  --  --
 Delete more:
 Index: 0   1   2   3   4   5
 Table: T   10  T   20  T   --
+       ^   
+       		 ^
+       		 		 ^
 ```
 
-
+One way to fix this is to rehash the table periodically by reinserting all live records into a new hash table. This removes the tombstones and restores fast performance.
 
 ​	

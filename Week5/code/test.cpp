@@ -21,7 +21,7 @@ int main(){
     // if the key exists in the hash table, then print its value
     if (list.find(key) != list.end()){
         cout << "Key found: " << list[key] << endl; 
-    } 
+    }
     // key doesn't exist
     else {
         cout << "Key not found" << endl;
