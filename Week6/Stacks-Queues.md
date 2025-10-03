@@ -45,25 +45,29 @@ Anh Huynh
 
 ```
 ENQUEUE with overflow detection
+// check if the queue is already full:
+// case 1: head is at 1 and tail is at the very end
+// case 2: tail is just behind head (circular wrap)
 if (Q.head == 1 and Q.tail == Q.length) or (Q.tail + 1 == Q.head)  
-    error "Queue overflow"
+    error "Queue overflow"   // can't add more stuff
 else
-    Q[Q.tail] = x
-    if Q.tail == Q.length
-        Q.tail = 1
+    Q[Q.tail] = x            // put new element at the tail
+    if Q.tail == Q.length    // if tail is at the very end
+        Q.tail = 1           // wrap around back to the start
     else
-        Q.tail = Q.tail + 1
+        Q.tail = Q.tail + 1  // otherwise just move tail forward
         
 DEQUEUE with underflow detection
+// check if queue is empty: head == tail means no elements
 if Q.head == Q.tail
-    error "Queue underflow"
+    error "Queue underflow"  // nothing to remove
 else
-    x = Q[Q.head]
-    if Q.head == Q.length
-        Q.head = 1
+    x = Q[Q.head]            // grab the element at the head
+    if Q.head == Q.length    // if head is at the very end
+        Q.head = 1           // wrap around back to the start
     else
-        Q.head = Q.head + 1
-    return x
+        Q.head = Q.head + 1  // otherwise just move head forward
+    return x                 // return the removed element
 ```
 
 4.
@@ -71,48 +75,50 @@ else
 ```
 Deque O(1) Operations
 
-Insertion at Front
+// Insertion at Front
 if deque is full
-	error "Deque Overflow"
+	error "Deque Overflow"           // can't add, no room left
 else 
-	if D.head == 1
-		D.head = D.length
+	if D.head == 1                  // if head is already at the first slot
+		D.head = D.length           // wrap it around to the last slot
 	else 
-		D.head = D.head - 1
-	D[D.head] = x
+		D.head = D.head - 1         // otherwise, just move head back one slot
+	D[D.head] = x                   // place new element at the new head position
 	
-Insertion at Rear
-if deque is full
-	error "Deque Overflow"
-else 
-	D[D.tail] = x
-	if D.tail == D.length	
-		D.tail = 1
-	else 
-		D.tail = D.tail + 1
 
-Delete from Front
-if deque is empty
-	error "Deque underflow"
+// Insertion at Rear
+if deque is full
+	error "Deque Overflow"           // can't add, no room left
 else 
-	x = D[D.head]
-	if D.head == D.length
-		D.head = 1
-	else
-		D.head = D.head + 1
-	return x
-	
-Delete from Rear
+	D[D.tail] = x                   // put new element at tail
+	if D.tail == D.length           // if tail is at the very end
+		D.tail = 1                   // wrap around to the beginning
+	else 
+		D.tail = D.tail + 1          // otherwise, move tail forward
+
+
+// Delete from Front
 if deque is empty
-	error "Deque underflow"
+	error "Deque underflow"          // nothing to remove
+else 
+	x = D[D.head]                   // grab the element at the head
+	if D.head == D.length           // if head is at the very end
+		D.head = 1                   // wrap around back to the beginning
+	else
+		D.head = D.head + 1          // otherwise, move head forward
+	return x                        // return the removed element
+	
+
+// Delete from Rear
+if deque is empty
+	error "Deque underflow"          // nothing to remove
 else
-	if D.tail == 1
-		D.tail = D.length
+	if D.tail == 1                   // if tail is at the very first slot
+		D.tail = D.length            // wrap it around to the last slot
 	else
-		D.tail = D.tail - 1
-	x = D[D.tail]
-	return x
-
+		D.tail = D.tail - 1          // otherwise, move tail backward
+	x = D[D.tail]                   // grab the element at the new tail
+	return x                        // return the removed element
 ```
 
 Video Link: 
