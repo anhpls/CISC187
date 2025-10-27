@@ -16,14 +16,7 @@ Inserting 11 into the max heap causes 11 to become the new root after the heapin
 
 
 
-![binaryheap.drawio](/Users/anhpls/Desktop/SWE/CISC187 Data Structures in C++/Week9/assets/binaryheap.drawio-1356588.png)
-
-
-
-
-
-
-
+![image-20251027011330409](/Users/anhpls/Desktop/SWE/CISC187 Data Structures in C++/Week9/assets/image-20251027011330409.png)
 
 
 2.
@@ -88,5 +81,5 @@ The new array is:
 
 
 
-**Video Link:** 
+**Video Link:** https://youtu.be/YW1w8RsYZno
 
