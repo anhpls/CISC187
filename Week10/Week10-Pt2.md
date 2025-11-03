@@ -29,3 +29,5 @@ So the algorithm fails to update B's distance correctly.
 
 Dijkstra's algorithm fails on negative weights because it assumes the shortest distance to each vertex is final once visited and it doesn't account for later paths that reduce distance through negative edges.
 
+
+**Video Link:** https://youtu.be/usmJ8KfN15w
