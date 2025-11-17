@@ -215,4 +215,4 @@ anhpls@Anhs-MacBook-Pro code % ./main
 33
 ```
 
-Video Link: 
+Video Link: https://youtu.be/T-1W5rg-hEI
