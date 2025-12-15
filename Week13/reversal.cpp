@@ -25,6 +25,18 @@ void printArr(vector<int>& arr){
 }
 
 
+
+
+public static int multiplyLessIterative(int n) {
+    int product = 1;               // start at 1
+    for (int i = 1; i <= n; i++) { // repeat i = 1 → n
+        product *= i;              // multiply as we go
+    }
+    return product;
+}
+
+
+
 int main(){
     vector<int> list = {1, 2, 3, 4, 5, 6, 7, 8};    // create an arr
 
@@ -34,3 +46,8 @@ int main(){
 
     printArr(list); // print post-reversal
 }
+
+
+
+
+
